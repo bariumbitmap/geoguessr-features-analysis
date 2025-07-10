@@ -4,8 +4,6 @@ In [GeoGuessr](https://www.geoguessr.com/),
 it can be difficult to know which clues are most prevalent.
 This is a hand-tagged date set from 140 no-moving rounds
 of [A Community World](https://www.geoguessr.com/maps/62a44b22040f04bd36e8a914),
-the [map used for No Move rounds](https://www.geoguessr.com/multiplayer/how-it-works)
-in the Gold and Master divisions for ranked solo duels.
 
 ## Rationale and methodology
 
@@ -26,16 +24,13 @@ This is because Moving rounds vary greatly in available information since player
 whereas No Move rounds are fixed to a single panorama but allow panning and zooming.
 NMPZ rounds could be examined but are more difficult to analyze
 because [the available information varies by monitor aspect ratio](https://old.reddit.com/r/geoguessr/comments/1aorc3h/nmpz_isnt_fair_the_viewport_gives_a_clear/).
+The dataset uses rounds from the map A Community World (ACW),
+because it is a hand-picked map
+that is [well-regarded in the community](https://old.reddit.com/r/geoguessr/comments/vbouxn/a_community_world_appreciation/)
+and because it is the [map used for No Move rounds](https://www.geoguessr.com/multiplayer/how-it-works)
+in the Gold and Master divisions for ranked solo duels.
 
-## Caveats
-
-1. **Prevalence is not the same as utility.** For example, vegetation of some kind may be present in nearly every round, but this may not translate into useful information; a lawn in the western United States may look very similar to a lawn in the eastern United States. Similarly, a utility pole may be present but too far away or too obscured by trees to distinguish any identifying features.
-
-2. **Sample size is small.** 140 rounds is a starting point, but is not enough to get a round in each [country or territory present in the street view locations](https://docs.google.com/spreadsheets/d/e/2PACX-1vRvb0sYBusg6FmOIjg8Hxy_6oMTsr5Z1A1dMDSnrZBv8pcPQiFoyg7oegnm6VZRoR76PzFldvKAvqQ2/pubhtml) for [A Community World](https://sites.google.com/view/acwgg/home), much less represent a significant percentage of the 106,915 locations. Confidence intervals and other statistical measures could be useful for better understanding this limitation (see future work).
-
-3. **Observational errors are likely present in manual tagging.** While I have tried to accurately tag each round, this requires careful inspection of the details of each panorama. It is easy to miss features such as fences that are far away, and some are necessarily a judgment call such as the presence or absence of hills.
-
-## Example findings
+## Findings summary
 
 Percent prevalence from 140 rounds of A Community World:
 
@@ -76,6 +71,16 @@ Percent prevalence from 140 rounds of A Community World:
 | 33 | Fire hydrant? | 3% |
 | 34 | Readable domain name(s)? | 2% |
 
+
+
+## Limitations and caveats
+
+1. **Prevalence is not the same as utility.** For example, vegetation of some kind may be present in nearly every round, but this may not translate into useful information; a lawn in the western United States may look very similar to a lawn in the eastern United States. Similarly, a utility pole may be present but too far away or too obscured by trees to distinguish any identifying features.
+
+2. **Sample size is small.** 140 rounds is a starting point, but is not enough to get a round in each [country or territory present in the street view locations](https://docs.google.com/spreadsheets/d/e/2PACX-1vRvb0sYBusg6FmOIjg8Hxy_6oMTsr5Z1A1dMDSnrZBv8pcPQiFoyg7oegnm6VZRoR76PzFldvKAvqQ2/pubhtml) for [A Community World](https://sites.google.com/view/acwgg/home), much less represent a significant percentage of the 106,915 locations. Confidence intervals and other statistical measures could be useful for better understanding this limitation (see future work).
+
+3. **Observational errors are likely present in manual tagging.** While I have tried to accurately tag each round, this requires careful inspection of the details of each panorama. It is easy to miss features such as fences that are far away, and some are necessarily a judgment call such as the presence or absence of hills.
+
 ## Future work
 
 1. **Confidence intervals and other statistical measures.** As these percentage feature prevalences are based on a simple random sample with replacement, they should be amenable to statistical techniques such as [confidence intervals](https://en.wikipedia.org/wiki/Confidence_interval) or [credible intervals](https://en.wikipedia.org/wiki/Credible_interval).
@@ -84,4 +89,4 @@ Percent prevalence from 140 rounds of A Community World:
 
 3. **Larger sample size.** Statistical measures will help ascertain the additional utility of larger samples. Larger samples will also allow exploration of country-specific clues.
 
-4. **Other maps.** For example, [A Varied World](https://www.geoguessr.com/maps/64ce812adc7614680516ff8c) is used for Masters division No Move solo duels, and is a handpicked map with a [different distibution of countries](https://docs.google.com/spreadsheets/d/1SuH2UW_eGiZ8xDeBNuQijCSzRKs1PWomylL2tQk_a0I/edit?pli=1&gid=477571445#gid=477571445) potentially different distribution of features.
+4. **Other maps.** For example, [A Varied World](https://www.geoguessr.com/maps/64ce812adc7614680516ff8c) is used for Masters division No Move solo duels, and is a handpicked map with a [different distibution of countries](https://docs.google.com/spreadsheets/d/1SuH2UW_eGiZ8xDeBNuQijCSzRKs1PWomylL2tQk_a0I/edit?pli=1&gid=477571445#gid=477571445) and so potentially different distribution of features.
