@@ -10,7 +10,7 @@ from [A Community World](https://www.geoguessr.com/maps/62a44b22040f04bd36e8a914
 which shows which features are most prevalent for this sample of map locations.
 This data set also shows that solar azimuth
 is a relatively reliable method for distinguishing northern and southern hemispheres
-(useful and correct in 81% of rounds)
+(useful and correct in 81% of sampled rounds)
 and that some features are of limited utility due to low prevalence,
 such as fire hydrants (3%) and domain names (2%).
 
@@ -19,13 +19,13 @@ such as fire hydrants (3%) and domain names (2%).
 [GeoGuessr](https://en.wikipedia.org/wiki/GeoGuessr)
 players determine the location of [Google Street View](https://en.wikipedia.org/wiki/Google_Street_View)
 locations by visually identifying features in the panoramic photograph,
-both in-world features like utility poles and national flags
-and meta features like Google car and camera generation.
-However, there is very little information on the prevalence of these features,
+both in-world features (e.g. utility poles and national flags)
+and meta features (e.g. Google car and camera generation).
+However, there is little quantitative information on the prevalence of these features,
 such as how often a round will contain a flag or utility pole.
 This prevalence may be useful for players
 who wish to know what features to focus on learning about
-(although see [caveats](# Limitations and caveats) below).
+(although see [caveats](#limitations-and-caveats) below).
 
 GeoGuessr has three modes in competitive solo duels:
 Moving; No Move; and No Moving, Panning, or Zooming (NMPZ).
@@ -128,7 +128,7 @@ and for this data set in particular.
 
 1. **Prevalence is not the same as utility.** For example, vegetation of some kind may be present in nearly every round, but this may not translate into useful information; a lawn in the northwestern United States may look very similar to a lawn in the northeastern United States. Similarly, license plates are a prevalent feature, but are automatically blurred in Google Street View coverage for privacy reasons, making them significantly harder to use for regional or national identification. Even when present and visible behind the blur, license plates may but too far away or too generic to discern any identifying features. This kind of classification of the utility of a feature is a much more complicated assessment than simple presence or absence (and is frankly beyond my skill level), so I have not attempted this here, except when validation is straightforward as for solar azimuth and northern/southern hemisphere.
 
-2. **Sample size is small.** 140 rounds is a starting point, but is not nearly enough to get a round in each [country or territory present in the street view locations](https://docs.google.com/spreadsheets/d/e/2PACX-1vRvb0sYBusg6FmOIjg8Hxy_6oMTsr5Z1A1dMDSnrZBv8pcPQiFoyg7oegnm6VZRoR76PzFldvKAvqQ2/pubhtml) for [A Community World](https://sites.google.com/view/acwgg/home), much less represent a significant percentage of the 106,915 total locations for the map. Confidence intervals and other statistical measures could be useful for better understanding this limitation (see future work).
+2. **Sample size is small.** 140 rounds is a starting point, but is not nearly enough to get a round in each [country or territory present in the street view locations](https://docs.google.com/spreadsheets/d/e/2PACX-1vRvb0sYBusg6FmOIjg8Hxy_6oMTsr5Z1A1dMDSnrZBv8pcPQiFoyg7oegnm6VZRoR76PzFldvKAvqQ2/pubhtml) for [A Community World](https://sites.google.com/view/acwgg/home), much less represent a significant percentage of the 106,915 total locations for the map. Confidence intervals and other statistical measures could be useful for better understanding this limitation (see [future work](#future-work)).
 
 3. **Observational errors are likely present in manual tagging.** While I have done my best to accurately tag each round, this requires careful inspection of the details of each panorama. It is easy to miss features such as fences that are far away, and some are necessarily a judgment call such as the presence or absence of hills.
 
