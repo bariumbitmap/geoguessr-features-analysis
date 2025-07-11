@@ -6,9 +6,9 @@ In the game of [GeoGuessr](https://www.geoguessr.com/),
 many visual features can be used to identify a location,
 but it can be difficult to know which features are most prevalent.
 I present a hand-tagged data set of 140 no-moving rounds
-from [A Community World](https://www.geoguessr.com/maps/62a44b22040f04bd36e8a914),
-which shows which features are most prevalent for this sample of map locations.
-This data set also shows that solar azimuth
+from [A Community World](https://www.geoguessr.com/maps/62a44b22040f04bd36e8a914);
+this data set shows which features are most prevalent for this sample of map locations.
+I also show that solar azimuth
 is a relatively reliable method for distinguishing northern and southern hemispheres
 (useful and correct in 81% of sampled rounds)
 and that some features are of limited utility due to low prevalence,
@@ -27,14 +27,15 @@ This prevalence may be useful for players
 who wish to know what features to focus on learning about
 (although see [caveats](#limitations-and-caveats) below).
 
-GeoGuessr has three modes in competitive solo duels:
+GeoGuessr uses ranked solo duels to determine ELO rating and overall progression along the division ladder.
+GeoGuessr has three game modes in [ranked solo duels](https://www.geoguessr.com/multiplayer/how-it-works):
 Moving; No Move; and No Moving, Panning, or Zooming (NMPZ).
 This dataset only examines No Move rounds.
-This is because Moving rounds vary greatly in available information since players can move freely,
+This is because Moving rounds vary greatly in available information since players can move freely to different photo panoramas,
 whereas No Move rounds are fixed to a single panorama but allow panning and zooming.
 NMPZ rounds could be examined but are more difficult to analyze
 because [the available information varies by monitor aspect ratio](https://old.reddit.com/r/geoguessr/comments/1aorc3h/nmpz_isnt_fair_the_viewport_gives_a_clear/).
-The dataset uses rounds from the map A Community World (ACW),
+The dataset uses rounds from the map [A Community World](https://www.geoguessr.com/maps/62a44b22040f04bd36e8a914) (ACW),
 because it is a hand-picked map
 that is [well-regarded in the community](https://old.reddit.com/r/geoguessr/comments/vbouxn/a_community_world_appreciation/)
 and because it is the [map used for No Move rounds](https://www.geoguessr.com/multiplayer/how-it-works)
@@ -86,7 +87,7 @@ the Google car meta is powerful because it is present in every single round
 and is often distinctive to each country or region.
 Utility poles and buildings are also commonly present and distinctive to countries
 and regions, so they are widely known to be useful.
-Fire hydrants are rare, hence seldom mentioned in guides like plonkit.net,
+Fire hydrants are rare, hence seldom mentioned in guides like [plonkit.net](https://www.plonkit.net/),
 except when unusually distinctive [such as in Croatia](https://www.plonkit.net/croatia).
 
 There are a few that surprised me personally:
@@ -95,10 +96,10 @@ Additionally, only national domains were present (.de, .id, .pl,
 no .com or .net domains),
 and only two of the three domain names matched the country
 (.id was in Indonesia and .pl was in Poland, but .de was in a location in Russia).
-Flags (13%), area codes (9%), and fronts of stop sign (4%) are also less common than I expected.
-Fences are surprisingly common,
+Flags (13%), area codes (9%), and fronts of stop signs (4%) are also less common than I expected.
+Fences are surprisingly common (78%),
 and while they are used by master-level players to distinguish countries,
-the plonkit.net guides (aimed at beginner and intermediate level players)
+the [plonkit.net](https://www.plonkit.net/) guides (aimed at beginner and intermediate level players)
 generally only use fences to distinguish regions within countries.
 This suggests that fences may deserve more careful study by players of intermediate skill,
 even if they are not as distinctive to each country as e.g. bollards/delineator posts are.
