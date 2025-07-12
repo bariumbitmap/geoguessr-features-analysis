@@ -47,40 +47,40 @@ Percent prevalence from 140 rounds of A Community World:
 
 | # | Feature | Prevalence |
 | --- | --- | --- |
-| 0 | Discernible Google car/blur? | 100% |
-| 1 | Discernible camera generation? | 100% |
-| 2 | Road direction? | 100% |
-| 3 | Trees/ grass/ vegetation? | 100% |
-| 4 | Copyright watermark? | 100% |
-| 5 | Dirt/ soil? | 96% |
-| 6 | Discernible solar azimuth? | 95% |
-| 7 | Discernible driving side? | 84% |
-| 8 | Utility poles? | 81% |
-| 9 | Wall(s)? | 81% |
-| 10 | Buildings/ roofs? | 80% |
-| 11 | Fence(s)? | 78% |
-| 12 | Other motor vehicle(s)? | 76% |
-| 13 | Discernible shadow direction? | 75% |
-| 14 | Sign fronts? | 71% |
-| 15 | Hills/ mountains? | 71% |
-| 16 | License plate(s)? | 66% |
-| 17 | Writing? | 62% |
-| 18 | Visible road markings? | 61% |
-| 19 | Sign backs? | 54% |
-| 20 | Bollards / delineator posts? | 40% |
-| 21 | Person(s)? | 40% |
-| 22 | Curb(s)? | 36% |
-| 23 | Water? | 30% |
-| 24 | Animal(s)? | 23% |
-| 25 | Guardrail(s)? | 20% |
-| 26 | Flag(s)? | 13% |
-| 27 | Area code(s)? | 9% |
-| 28 | Rift(s)? | 8% |
-| 29 | Chevron sign(s)? | 8% |
-| 31 | Stop sign front? | 4% |
-| 32 | Snow? | 4% |
-| 33 | Fire hydrant? | 3% |
-| 34 | Readable domain name(s)? | 2% |
+| 1 | Discernible Google car/blur? | 100% |
+| 2 | Discernible camera generation? | 100% |
+| 3 | Road direction? | 100% |
+| 4 | Trees/ grass/ vegetation? | 100% |
+| 5 | Copyright watermark? | 100% |
+| 6 | Dirt/ soil? | 96% |
+| 7 | Discernible solar azimuth? | 95% |
+| 8 | Discernible driving side? | 84% |
+| 9 | Utility poles? | 81% |
+| 10 | Wall(s)? | 81% |
+| 11 | Buildings/ roofs? | 80% |
+| 12 | Fence(s)? | 78% |
+| 13 | Other motor vehicle(s)? | 76% |
+| 14 | Discernible shadow direction? | 75% |
+| 15 | Sign fronts? | 71% |
+| 16 | Hills/ mountains? | 71% |
+| 17 | License plate(s)? | 66% |
+| 18 | Writing? | 62% |
+| 19 | Visible road markings? | 61% |
+| 20 | Sign backs? | 54% |
+| 21 | Bollards / delineator posts? | 40% |
+| 22 | Person(s)? | 40% |
+| 23 | Curb(s)? | 36% |
+| 24 | Water? | 30% |
+| 25 | Animal(s)? | 23% |
+| 26 | Guardrail(s)? | 20% |
+| 27 | Flag(s)? | 13% |
+| 28 | Area code(s)? | 9% |
+| 29 | Rift(s)? | 8% |
+| 30 | Chevron sign(s)? | 8% |
+| 32 | Stop sign front? | 4% |
+| 33 | Snow? | 4% |
+| 34 | Fire hydrant? | 3% |
+| 35 | Readable domain name(s)? | 2% |
 
 A lot of these are in line with existing knowledge and well-established strategies:
 the Google car meta is powerful because it is present in every single round
