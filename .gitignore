@@ -1,3 +1,4 @@
 *.png
 *.pdf
 .ipynb_checkpoints/
+*.lnk
