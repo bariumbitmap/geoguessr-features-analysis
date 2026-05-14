@@ -1,6 +1,6 @@
 More graphs:
 - [ ] histogram of how many features are present per round
-- [ ] bar chart of proportions of pavement materials
+- [ ] bar chart of proportions of road pavement materials
 - [ ] prevalence of features by continent
 - [ ] prevalence of features by tectonic plate
 
